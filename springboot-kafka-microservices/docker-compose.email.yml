@@ -1,0 +1,8 @@
+version: "3.8"
+#containers => service
+services:
+  email-service:
+    image: hieungx/email-service-image:v2.0.0
+    container_name: email-container
+    ports:
+      - 8092:8082

@@ -1,0 +1,8 @@
+version: "3.8"
+#containers => service
+services:
+  order-service:
+    image: hieungx/order-service-image:v2.0.0
+    container_name: order-container
+    ports:
+      - 8090:8080

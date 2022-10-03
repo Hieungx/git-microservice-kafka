@@ -1,0 +1,9 @@
+
+`	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+9
+java:S2629"$Invoke method(s) only conditionally.(ž“›+
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¦§‚
+b
+java:S1858"M"orderEvent" is already a string, there's no need to call "toString()" on it.(ž“›+
+M
+java:S1135 "2Complete the task associated to this TODO comment.(£‡ß¨ûÿÿÿÿ

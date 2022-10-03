@@ -1,0 +1,40 @@
+version: '3.8'
+#networks:
+#  my_network:
+#    driver: bridge
+
+#networks:
+#  default:
+#    name: springboot-kafka-microservices_default
+#    external: true
+
+services:
+  #  zookeeper:
+  #    image: wurstmeister/zookeeper
+  #    ports:
+  #      - "2181:2181"
+  #  kafka:
+  #    image: wurstmeister/kafka
+  #    ports:
+  #      - "9092:9092"
+  #    depends_on:
+  #      - zookeeper
+  #    environment:
+  #      KAFKA_ADVERTISED_HOST_NAME: kafka
+  #      KAFKA_ADVERTISED_PORT: 9092
+  ##      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+  #  #      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'orderTopics'
+  order-service:
+    image: hieungx/order-service-image:v7
+    container_name: order-service-container
+    ports:
+      - 8080:8080
+#    networks:
+#      - my_network
+#  email-service:
+#    image: hieungx/email-service-image:v5
+#    container_name: email-container
+#    ports:
+#      - 8092:8082
+#    networks:
+#      - my_network
